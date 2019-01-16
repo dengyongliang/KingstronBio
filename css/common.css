@@ -1,0 +1,332 @@
+@charset "UTF-8";
+body{
+  background: #f2f2f2;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar .mobile-banner{
+  width: 100%;
+}
+.navbar .navbar-brand{
+  display: none;
+}
+.navbar .container-fluid{
+  position: absolute;
+  top: 20px;
+}
+.navbar button{
+  width: 60%;
+  border: none;
+}
+.navbar button img{
+  width: 100%;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+  background: none;
+}
+.nav>li>a:hover,
+.nav>li>a:focus,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a{
+  background: #22567e;
+  color: #fff;
+}
+
+.navbar .navbar-collapse{
+  width: 40%;
+  background: #22567e;
+  position: absolute;
+  top: 20px;
+  border: none;
+  padding: 0px;
+}
+.navbar .navbar-collapse ul{
+  margin: 0px;
+}
+.navbar .dropdown-menu{
+  padding: 0px;
+  min-width: 100%;
+}
+.navbar .dropdown-menu li{
+  background: #366589;
+  margin-bottom: 1px;
+}
+.navbar .dropdown-menu li a{
+  color: #fff!important;
+  padding: 5px 0 5px 15px!important;
+}
+.carousel{
+  display: none;
+}
+.thumbnail{
+  padding: 0px;
+  border-radius: 0px;
+  box-shadow: 0 0 0;
+  border: none;
+}
+.thumbnail img{
+  width: 100%;
+}
+.h3T{
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 40px;
+}
+.h3T .l{
+  float: left;
+  color: #206ea9;
+}
+.h3T .r{
+  float: right;
+  font-size: 14px;
+  color: #999;
+  position: relative;
+}
+
+.footer{
+  border-top: 2px solid #206ea9;
+  background: #fff;
+  margin-top: 30px;
+}
+.footer .row{
+  margin: 0px;
+  padding: 40px 0;
+}
+.footer .row>div{
+  padding: 0px 20px;
+}
+.footer .row .footerL{
+  margin-bottom: 30px;
+}
+
+.footer .links{
+  display: none;
+}
+.footer .add{
+  font-size: 14px;
+  color: #333;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+.footer .cp{
+  padding-top: 20px;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+}
+.footer .qr-code{
+  padding-right: 60px;
+  font-size: 12px;
+  text-align: center;
+}
+.footer .qr-code img{
+  width: 91px;
+  height: 91px;
+  margin-bottom: 10px;
+}
+.footer .qr-code span{
+  color: #999;
+}
+.footer .media-heading{
+  font-size: 18px;
+  color: #666;
+  font-weight: normal;
+}
+.footer .media-heading span{
+  font-size: 12px;
+}
+.footer .tel{
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.footer .email,
+.footer .tel2{
+  color: #999;
+  font-size: 12px;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  .navbar {
+    display: block;
+    background: #fff;
+    margin-bottom: 0px;
+  }
+  .navbar>.container .navbar-brand,
+  .navbar>.container-fluid .navbar-brand{
+    height: auto;
+    margin: 30px 140px 0 0;
+  }
+  .navbar .container-fluid{
+    max-width: 1200px;
+    padding: 0px;
+  }
+  .navbar .mobile-banner{
+    display: none;
+  }
+  .navbar .navbar-brand{
+    display: block;
+  }
+  .navbar .container-fluid{
+    position: static;
+  }
+  .navbar-nav>li{
+    min-width: 150px;
+  }
+  .navbar-nav>li>a{
+    line-height: 88px;
+    text-align: center;
+  }
+  .navbar-default .navbar-nav>li>a{
+    background: none;
+    color: #333;
+  }
+  .nav>li>a:hover,
+  .nav>li>a:focus,
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>.active>a:focus
+  .navbar-default .navbar-nav>.open>a:hover,
+  .navbar-default .navbar-nav>.open>a:focus,
+  .navbar-default .navbar-nav>li>a:hover,
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>.open>a,
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover{
+    color: #22567e;
+    background: #f4f8fb;
+    box-shadow: inset 0 3px 9px rgba(255,255,255,0);
+  }
+
+  .navbar .navbar-collapse{
+    width: auto;
+    background: none;
+    position: static;
+    border: none;
+    padding: 0px;
+  }
+  .navbar .navbar-collapse ul{
+    margin: 0px;
+  }
+  .navbar .dropdown-menu{
+    padding: 0px;
+    min-width: 100%;
+  }
+  .navbar .dropdown-menu li{
+    background: none;
+    margin-bottom: 0px;
+  }
+  .navbar-nav>li>.dropdown-menu{
+    min-width: 100%;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+    border-top: 2px solid #206ea9;
+    padding: 0px;
+  }
+  .navbar-nav>li>.dropdown-menu li a{
+    line-height: 40px;
+    padding: 0px;
+    color: #333!important;
+    padding: 5px 0!important;
+    text-align: center;
+  }
+  .navbar-nav>li>.dropdown-menu li a:hover{
+    background: #206ea9;
+    color: #fff!important;
+  }
+  .navbar-brand{
+    padding: 0px;
+  }
+  .carousel{
+    display: block;
+  }
+  .footer .row{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  .footer .row>div{
+    padding: 0px;
+  }
+  .footer .footerL{
+    float: right;
+  }
+  .footer .footerR{
+    float: left;
+  }
+  .footer .links{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .footer .links a{
+    color: #333;
+    font-size: 16px;
+  }
+  .footer .links .line{
+    color: #333;
+    font-size: 16px;
+    margin: 0 20px;
+  }
+  .footer .add{
+    font-size: 14px;
+    color: #333;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+  .footer .cp{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+  }
+  .footer .qr-code{
+    padding-right: 60px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer .qr-code img{
+    width: 91px;
+    height: 91px;
+    margin-bottom: 10px;
+  }
+  .footer .qr-code span{
+    color: #999;
+  }
+  .footer .media-heading{
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+  }
+  .footer .media-heading span{
+    font-size: 12px;
+  }
+  .footer .tel{
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .footer .email,
+  .footer .tel2{
+    color: #999;
+    font-size: 12px;
+  }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) { ... }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}
