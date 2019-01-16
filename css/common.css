@@ -124,7 +124,7 @@ body{
   line-height: 20px;
 }
 .footer .qr-code{
-  padding-right: 60px;
+  padding-right: 20px;
   font-size: 12px;
   text-align: center;
 }
@@ -153,6 +153,48 @@ body{
 .footer .tel2{
   color: #999;
   font-size: 12px;
+}
+
+/* 产品列表 */
+.row-product .row{
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.row-product .row>div{
+  padding: 0px 15px;
+}
+.row-product .row>div .info{
+  background: #fff;
+  padding: 40px;
+}
+.row-product .row>div a{
+  margin: 0px;
+}
+.row-product .row>div .info h3{
+  font-size: 22px;
+  margin: 0px;
+}
+.row-product .row>div .info p{
+  color: #666;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.row-product .row>div .info ul{
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+.row-product .row>div .info li{
+  padding: 0;
+}
+.row-product .row>div .info li span{
+  display:block;
+  border: 1px solid #dddddd;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #999;
+  line-height: 28px;
 }
 
 /* 小屏幕（平板，大于等于 768px） */
@@ -320,6 +362,52 @@ body{
   .footer .tel2{
     color: #999;
     font-size: 12px;
+  }
+
+  /* 产品列表 */
+  .row-product .row{
+    margin-bottom: 30px;
+    margin: 0px auto;
+    max-width: 1200px;
+  }
+  .row-product .row:nth-child(2n+2) .col-img{
+    float: right;
+  }
+  .row-product .row:nth-child(2n+2) .col-info{
+    float: left;
+  }
+  .row-product .row>div{
+    height: 383px;
+    background: #fff;
+    padding: 0px;
+  }
+  .row-product .row>div .info{
+    padding: 70px 40px 0 40px;
+  }
+  .row-product .row>div .info h3{
+    font-size: 22px;
+  }
+  .row-product .row>div .info p{
+    color: #666;
+    font-size: 14px;
+    padding-top: 30px;
+  }
+  .row-product .row>div .info ul{
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+  }
+  .row-product .row>div .info li{
+    padding: 0;
+  }
+  .row-product .row>div .info li span{
+    display:block;
+    border: 1px solid #dddddd;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #999;
+    line-height: 28px;
   }
 }
 
