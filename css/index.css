@@ -91,6 +91,7 @@
 }
 .row-advantage .row img{
   height: 56px;
+  width: auto;
 }
 .row-advantage .row strong{
   display: block;
@@ -183,6 +184,7 @@
   }
   .row-advantage{
     margin-bottom: 30px;
+    background: none;
   }
   .row-advantage .wrap{
     max-width: 1200px;
@@ -198,20 +200,14 @@
     display: block;
     height: 225px;
     border: 2px solid #e8e8e8;
-    padding: 30px;
+    padding: 25px 30px;
     margin: 0px;
     text-align: center;
     text-decoration: none;
   }
-  .row-advantage .row a:hover{
-    border-color: #206ea9;
-  }
-  .row-advantage .row a:hover .line{
-    width: 55px;
-    background: #206ea9;
-  }
   .row-advantage .row img{
     height: 56px;
+    width: auto;
   }
   .row-advantage .row strong{
     display: block;
@@ -240,7 +236,20 @@
     background: #eee;
     margin: 13px 0 10px 0;
   }
-
+  .row-advantage .row a:hover{
+    border-color: #206ea9;
+  }
+  .row-advantage .row a:hover .line{
+    width: 55px;
+    background: #206ea9;
+  }
+  .row-advantage .row a:hover strong,
+  .row-advantage .row a:hover span{
+    color: #206ea9;
+  }
+  .row-clinical{
+    display: block;
+  }
   .row-clinical .wrap{
     max-width: 1200px;
     margin: 0 auto;
@@ -248,6 +257,9 @@
   .row-clinical .wrap .media{
     background: #fff;
     padding: 30px;
+  }
+  .row-clinical a{
+    text-decoration: none;
   }
   .row-clinical img{
     max-width: 233px;

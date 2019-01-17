@@ -2,53 +2,63 @@
 .navbar{
   margin-bottom: 30px;
 }
-.row-article .wrap{
+.row-list .wrap{
   text-align: center;
   padding-top: 10px;
 }
-.row-article h1{
-  color: #22567b;
-}
-.row-article .menu ul{
+.row-list .menu ul{
   list-style: none;
   padding: 0px 15px;
 }
-.row-article .menu ul li{
+.row-list .menu ul li{
   margin-bottom: 10px;
   padding: 0 5px;
 }
-.row-article .menu ul li a{
+.row-list .menu ul li a{
   display: block;
   color:#1f4f77;
   line-height: 30px;
   border: 2px solid #1f4f77;
   text-decoration: none;
 }
-.row-article .menu ul li.active a{
+.row-list .menu ul li.active a{
   background: #1f4f77;
   color: #fff;
 }
-.row-article .article{
-  background: #fff;
-  padding-top: 10px;
-}
-article img{
-  width: 100%;
-  margin: 5px 0
-}
-article.row{
-  text-align: left;
-  margin: 20px 20px 0 20px;
-  padding: 10px 0;
-  border-top: 2px solid #ddd;
-}
 
-article p{
-  padding: 10px 0;
+.row-list .list>ul{
+  margin: 20px;
+  list-style: none;
+  padding: 0px;
 }
-article *{
+.row-list .list>ul li{
+  background: #fff;
+  text-align: left;
+}
+.row-list .media img{
+  width: 100%;
+}
+.row-list .media *{
+  padding: 0px;
+}
+.row-list .media .media-body{
+  width: 100%;
+  padding: 22px;
+}
+.row-list .media .media-time{
   color: #666;
-  font-size: 14px;
+}
+.row-list .media .media-heading{
+  color: #22567e;
+  font-size: 20px;
+  padding: 15px 0 20px 0;
+  font-weight: 200;
+}
+.row-list .media p{
+  color: #666;
+}
+.row-list .pageNav{
+  display: none;
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
@@ -58,17 +68,17 @@ article *{
   .carousel{
     margin-bottom: 30px;
   }
-  .row-article .wrap{
+  .row-list .wrap{
     max-width: 1200px;
     margin: 0 auto;
     background: none;
   }
-  .row-article .menu{
+  .row-list .menu{
     float: left;
     width: 270px;
     margin-right: 40px;
   }
-  .row-article .menu ul{
+  .row-list .menu ul{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border:1px solid #ececec;
@@ -77,17 +87,17 @@ article *{
     overflow: hidden;
     padding: 0px;
   }
-  .row-article .menu ul li{
+  .row-list .menu ul li{
     width: 100%;
     padding: 0px;
     margin: 0px;
   }
-  .row-article .menu ul li.active a{
+  .row-list .menu ul li.active a{
     background: none;
     color: #21577d;
     border-left-color: #22567e;
   }
-  .row-article .menu ul li a{
+  .row-list .menu ul li a{
     color: #333;
     text-decoration: none;
     border: none;
@@ -96,24 +106,63 @@ article *{
     border-left: 3px solid #fff;
     border-bottom: 1px solid #ececec;
   }
-  .row-article .menu ul li:nth-last-child(1) a{
+  .row-list .menu ul li:nth-last-child(1) a{
     border-bottom: none;
   }
-  .row-article .article{
+  .row-list .list{
     overflow: hidden;
     background: -moz-linear-gradient(top,  rgba(235,235,235,1) 0%, rgba(255,255,255,1) 10%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(235,235,235,1) 0%,rgba(255,255,255,1) 10%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(235,235,235,1) 0%,rgba(255,255,255,1) 10%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    padding-top: 10px;
-  }
-  article.row{
+    padding-bottom: 55px;
     text-align: left;
-    margin: 30px 72px 0 72px;
-    padding: 30px 0;
   }
-  article img{
+  .row-list .list>ul{
+    padding: 55px;
+    margin: 0px;
+  }
+  .row-list .list>ul li{
+    padding-top: 10px;
+    background: none;
+  }
+  .row-list .media{
+    background: #fff;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eae4d8;
+  }
+  .row-list .media img{
+    max-width: 233px;
+  }
+  .row-list .media .media-left{
     width: auto;
+    float: left;
+    padding: 0px;
+    padding-right: 30px;
+  }
+  .row-list .media .media-body{
+    width: auto;
+    display: block;
+    float: none;
+    padding: 0px;
+  }
+  .row-list .media .media-time{
+    color: #666;
+  }
+  .row-list .media .media-heading{
+    color: #22567e;
+    font-size: 20px;
+    padding: 15px 0 20px 0;
+    font-weight: 200;
+  }
+  .row-list .media a{
+    text-decoration: none;
+  }
+  .row-list .media p{
+    color: #666;
+  }
+  .row-list .pageNav{
+    display: block;
   }
 }
 

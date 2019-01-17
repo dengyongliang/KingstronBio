@@ -30,12 +30,19 @@ article *{
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
+  .navbar{
+    margin-bottom: 0px;
+  }
   .carousel{
     margin-bottom: 30px;
   }
   .row-article .wrap{
     max-width: 1200px;
     margin: 0 auto;
+    background: -moz-linear-gradient(top,  rgba(235,235,235,1) 0%, rgba(255,255,255,1) 10%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(235,235,235,1) 0%,rgba(255,255,255,1) 10%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(235,235,235,1) 0%,rgba(255,255,255,1) 10%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
   .row-article .info{
     color: #666;

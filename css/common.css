@@ -5,6 +5,7 @@ body{
 .navbar{
   margin-bottom: 0px;
 }
+
 .navbar .mobile-banner{
   width: 100%;
 }
@@ -12,11 +13,20 @@ body{
   display: none;
 }
 .navbar .container-fluid{
+  width: 300px;
+  padding: 0px;
   position: absolute;
   top: 20px;
 }
+.navbar .navbar-toggle{
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: -147px;
+  top: -3px;
+}
 .navbar button{
-  width: 60%;
+  width: 150px;
   border: none;
 }
 .navbar button img{
@@ -42,12 +52,23 @@ body{
 }
 
 .navbar .navbar-collapse{
-  width: 40%;
+  display: block;
+  width: 150px;
   background: #22567e;
   position: absolute;
   top: 20px;
+  left: 0px;
   border: none;
   padding: 0px;
+  margin: 0px;
+  margin-left: -150px;
+  transition: transform 0.3s linear;
+}
+.navbar .navbar-collapse.left {
+  transform: translateX(0px);
+}
+.navbar .navbar-collapse.right {
+  transform: translateX(150px);
 }
 .navbar .navbar-collapse ul{
   margin: 0px;
@@ -84,6 +105,9 @@ body{
 .h3T .l{
   float: left;
   color: #206ea9;
+}
+.h3T .l img{
+  margin-right: 15px;
 }
 .h3T .r{
   float: right;
@@ -140,6 +164,7 @@ body{
   font-size: 18px;
   color: #666;
   font-weight: normal;
+  padding-bottom: 3px;
 }
 .footer .media-heading span{
   font-size: 12px;
@@ -148,6 +173,10 @@ body{
   font-size: 24px;
   color: #666;
   margin-bottom: 20px;
+}
+.footer .tel img{
+  margin-right: 10px;
+  vertical-align: baseline;
 }
 .footer .email,
 .footer .tel2{
@@ -204,13 +233,18 @@ body{
     background: #fff;
     margin-bottom: 0px;
   }
+  .navbar .glyphicon{
+    color: #ccc;
+    font-size: 12px;
+    margin-left: 10px;
+  }
   .navbar>.container .navbar-brand,
   .navbar>.container-fluid .navbar-brand{
     height: auto;
     margin: 30px 140px 0 0;
   }
   .navbar .container-fluid{
-    max-width: 1200px;
+    width: 1200px;
     padding: 0px;
   }
   .navbar .mobile-banner{
@@ -256,6 +290,7 @@ body{
     position: static;
     border: none;
     padding: 0px;
+    /*transform: translateX(0px)!important;*/
   }
   .navbar .navbar-collapse ul{
     margin: 0px;
@@ -386,11 +421,16 @@ body{
   }
   .row-product .row>div .info h3{
     font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .row-product .row>div .info h3 i,
+  .row-product .row>div .info strong{
+    font-family:"Times New Roman";
   }
   .row-product .row>div .info p{
     color: #666;
     font-size: 14px;
-    padding-top: 30px;
+    padding: 20px 0;
   }
   .row-product .row>div .info ul{
     padding: 0px;
@@ -408,6 +448,20 @@ body{
     text-align: center;
     color: #999;
     line-height: 28px;
+  }
+  .pageNav{
+    text-align: center;
+  }
+  .pageNav ul{
+    margin:0px;
+  }
+  .pageNav ul a:hover{
+    background: #7da1c1;
+    color: #fff;
+  }
+  .pageNav ul li.disabled a,
+  .pageNav ul li.disabled a:hover{
+    color: #aaa!important;
   }
 }
 
