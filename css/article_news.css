@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.navbar{
+.carousel{
   margin-bottom: 30px;
 }
 .row-article .wrap{
   text-align: center;
-  padding-top: 10px;
 }
 .row-article h1{
+  font-size: 25px;
   color: #22567b;
 }
 .row-article .menu ul{
@@ -32,6 +32,9 @@
   background: #fff;
   padding-top: 10px;
 }
+.row-article .article .info{
+  font-size: 12px;
+}
 article img{
   width: 100%;
   margin: 5px 0
@@ -52,11 +55,18 @@ article *{
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
-  .navbar{
-    margin-bottom: 0px;
-  }
-  .carousel{
-    margin-bottom: 30px;
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  .row-article h1{
+    font-size: 30px;
   }
   .row-article .wrap{
     max-width: 1200px;
@@ -115,14 +125,4 @@ article *{
   article img{
     width: auto;
   }
-}
-
-/* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) {
-
-}
-
-/* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) {
-
 }

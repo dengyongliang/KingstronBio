@@ -4,10 +4,17 @@ body{
 }
 .navbar{
   margin-bottom: 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .navbar .mobile-banner{
   width: 100%;
+  display: none;
 }
 .navbar .navbar-brand{
   display: none;
@@ -61,7 +68,7 @@ body{
   border: none;
   padding: 0px;
   margin: 0px;
-  margin-left: -150px;
+  margin-left: -151px;
   transition: transform 0.3s linear;
 }
 .navbar .navbar-collapse.left {
@@ -84,9 +91,16 @@ body{
 .navbar .dropdown-menu li a{
   color: #fff!important;
   padding: 5px 0 5px 15px!important;
+  font-size: 12px;
 }
-.carousel{
-  display: none;
+.carousel img{
+  width: 100%;
+}
+.carousel .item{
+  background: url(../img/img_banner.png) ;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .thumbnail{
   padding: 0px;
@@ -161,7 +175,7 @@ body{
   color: #999;
 }
 .footer .media-heading{
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
   font-weight: normal;
   padding-bottom: 3px;
@@ -170,7 +184,7 @@ body{
   font-size: 12px;
 }
 .footer .tel{
-  font-size: 24px;
+  font-size: 20px;
   color: #666;
   margin-bottom: 20px;
 }
@@ -187,14 +201,14 @@ body{
 /* 产品列表 */
 .row-product .row{
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .row-product .row>div{
   padding: 0px 15px;
 }
 .row-product .row>div .info{
   background: #fff;
-  padding: 40px;
+  padding: 20px;
 }
 .row-product .row>div a{
   margin: 0px;
@@ -202,6 +216,10 @@ body{
 .row-product .row>div .info h3{
   font-size: 22px;
   margin: 0px;
+}
+.row-product .row>div .info h3 a{
+  color: #333;
+  text-decoration: none;
 }
 .row-product .row>div .info p{
   color: #666;
@@ -225,13 +243,75 @@ body{
   color: #999;
   line-height: 28px;
 }
-
+/* 小屏幕 */
+@media (max-width: 320px) {
+  .footer .media-heading{
+    font-size: 14px;
+  }
+  .footer .tel{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+}
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
+  .navbar-collapse.collapse,
+  .navbar-toggle{
+    display: block!important;
+  }
+  .navbar-nav,
+  .navbar-nav li{
+    float: none;
+  }
+  .navbar .dropdown-menu{
+    padding: 0px;
+    min-width: 100%;
+    background: none;
+  }
+  .navbar .dropdown-menu li{
+    background: #366589;
+    margin-bottom: 1px;
+  }
+  .navbar .dropdown-menu li a{
+    color: #fff!important;
+    padding: 5px 0 5px 15px!important;
+    font-size: 13px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  .row-product .row>div{
+    height: 327px;
+    background: #fff;
+    padding: 0px;
+  }
+  .footer .footerL{
+    float: right;
+  }
+  .footer .footerR{
+    float: left;
+  }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
   .navbar {
     display: block;
     background: #fff;
     margin-bottom: 0px;
+    position: relative;
   }
   .navbar .glyphicon{
     color: #ccc;
@@ -255,6 +335,10 @@ body{
   }
   .navbar .container-fluid{
     position: static;
+  }
+  .navbar-nav,
+  .navbar-nav li{
+    float: left;
   }
   .navbar-nav>li{
     min-width: 150px;
@@ -295,11 +379,8 @@ body{
   .navbar .navbar-collapse ul{
     margin: 0px;
   }
-  .navbar .dropdown-menu{
-    padding: 0px;
-    min-width: 100%;
-  }
   .navbar .dropdown-menu li{
+    width: 100%;
     background: none;
     margin-bottom: 0px;
   }
@@ -310,6 +391,7 @@ body{
     text-align: center;
     border-top: 2px solid #206ea9;
     padding: 0px;
+    background: #fff;
   }
   .navbar-nav>li>.dropdown-menu li a{
     line-height: 40px;
@@ -317,16 +399,27 @@ body{
     color: #333!important;
     padding: 5px 0!important;
     text-align: center;
+    font-size: 14px;
   }
   .navbar-nav>li>.dropdown-menu li a:hover{
     background: #206ea9;
     color: #fff!important;
   }
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+    border-top: 2px solid #206ea9;
+  }
   .navbar-brand{
     padding: 0px;
   }
-  .carousel{
-    display: block;
+  .carousel .item{
+    height: 500px;
   }
   .footer .row{
     max-width: 1200px;
@@ -463,12 +556,4 @@ body{
   .pageNav ul li.disabled a:hover{
     color: #aaa!important;
   }
-}
-
-/* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) { ... }
-
-/* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) {
-
 }

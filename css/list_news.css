@@ -1,10 +1,9 @@
 @charset "UTF-8";
-.navbar{
+.carousel{
   margin-bottom: 30px;
 }
 .row-list .wrap{
   text-align: center;
-  padding-top: 10px;
 }
 .row-list .menu ul{
   list-style: none;
@@ -43,7 +42,7 @@
 }
 .row-list .media .media-body{
   width: 100%;
-  padding: 22px;
+  padding: 20px;
 }
 .row-list .media .media-time{
   color: #666;
@@ -62,12 +61,16 @@
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
-  .navbar{
-    margin-bottom: 0px;
-  }
-  .carousel{
-    margin-bottom: 30px;
-  }
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
   .row-list .wrap{
     max-width: 1200px;
     margin: 0 auto;
@@ -164,14 +167,4 @@
   .row-list .pageNav{
     display: block;
   }
-}
-
-/* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) {
-
-}
-
-/* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) {
-
 }

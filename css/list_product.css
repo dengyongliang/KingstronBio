@@ -1,16 +1,11 @@
 @charset "UTF-8";
-.navbar{
+.carousel{
   margin-bottom: 30px;
 }
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
-  .navbar{
-    margin-bottom: 0px;
-  }
-  .carousel{
-    margin-bottom: 30px;
-  }
+
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */

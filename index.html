@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kingstronBio-首页</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="widget/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="widget/bootstrap/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -59,7 +59,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="img/img_banner.png">
+      <img src="img/img_banner_blank.png">
       <div class="carousel-caption"></div>
     </div>
   </div>
@@ -158,18 +158,17 @@
     </div>
   </div>
 </div>
-
+<!-- 产品列表 -->
 <div class="row-product">
-  <!-- 产品列表 -->
   <div class="row">
     <div class="col-md-6 col-xs-12 col-img">
-      <a class="thumbnail">
+      <a class="thumbnail" href="article_product.html">
         <img src="img/img_product_01.png" alt="...">
       </a>
     </div>
     <div class="col-md-6 col-xs-12 col-info">
       <div class="info">
-        <h3>产品名称 <i>SK-107</i></h3>
+        <h3><a href="article_product.html" >产品名称</a> <i>SK-107</i></h3>
         <strong>PRODUCT NAME</strong>
         <p>产品介绍技基于”社区医院+互联网”,以“普惠医疗，全民健康”为使命，以中孝社区医院为基础服务平台，以用户全生命周期为中心用医生集团互联网化运营模式并延伸出中孝医生、中孝良品、中孝金融等三大板块业务</p>
         <ul class="row">
@@ -185,13 +184,13 @@
   </div>
   <div class="row">
     <div class="col-md-6 col-xs-12 col-img">
-      <a class="thumbnail">
+      <a class="thumbnail" href="article_product.html">
         <img src="img/img_product_02.png" alt="...">
       </a>
     </div>
     <div class="col-md-6 col-xs-12 col-info">
       <div class="info">
-        <h3>产品名称 <i>SK-107</i></h3>
+        <h3><a href="article_product.html">产品名称</a> <i>SK-107</i></h3>
         <strong>PRODUCT NAME</strong>
         <p>产品介绍技基于”社区医院+互联网”,以“普惠医疗，全民健康”为使命，以中孝社区医院为基础服务平台，以用户全生命周期为中心用医生集团互联网化运营模式并延伸出中孝医生、中孝良品、中孝金融等三大板块业务</p>
         <ul class="row">
@@ -207,13 +206,13 @@
   </div>
   <div class="row">
     <div class="col-md-6 col-xs-12 col-img">
-      <a class="thumbnail">
+      <a class="thumbnail" href="article_product.html">
         <img src="img/img_product_03.png" alt="...">
       </a>
     </div>
     <div class="col-md-6 col-xs-12 col-info">
       <div class="info">
-        <h3>产品名称 <i>SK-107</i></h3>
+        <h3><a href="article_product.html">产品名称</a> <i>SK-107</i></h3>
         <strong>PRODUCT NAME</strong>
         <p>产品介绍技基于”社区医院+互联网”,以“普惠医疗，全民健康”为使命，以中孝社区医院为基础服务平台，以用户全生命周期为中心用医生集团互联网化运营模式并延伸出中孝医生、中孝良品、中孝金融等三大板块业务</p>
         <ul class="row">
@@ -290,31 +289,7 @@
   </div>
 </footer>
 </body>
-<script type="text/javascript" src="jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-<script>
-$(".navbar-toggle").click(function(){
-  if ($('#bs-example-navbar-collapse-1').hasClass('left')) {
-    toRight()
-  } else if ($('#bs-example-navbar-collapse-1').hasClass('right')) {
-    toLeft()
-  } else {
-    toRight()
-  }
-})
-var toLeft = function () {
-    $('#bs-example-navbar-collapse-1').removeClass('right').addClass('left');
-};
-
-var toRight = function () {
-    $('#bs-example-navbar-collapse-1').removeClass('left').addClass('right');
-};
-
-var reset = function () {
-    $('#bs-example-navbar-collapse-1').removeClass('left right');
-};
-
-
-</script>
+<script type="text/javascript" src="widget/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="widget/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 </html>
