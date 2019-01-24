@@ -24,6 +24,9 @@
   border: 2px solid #1f4f77;
   text-decoration: none;
 }
+.row-article .menu ul li a:hover{
+  background: #f0f7f9;
+}
 .row-article .menu ul li.active a{
   background: #1f4f77;
   color: #fff;

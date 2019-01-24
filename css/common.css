@@ -1,6 +1,13 @@
 @charset "UTF-8";
 body{
-  background: #f2f2f2;
+  background: #f2f2f2; overflow-x: hidden;
+}
+a{
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 .navbar{
   margin-bottom: 0px;
@@ -29,7 +36,7 @@ body{
   padding: 0px;
   margin: 0px;
   position: absolute;
-  right: -147px;
+  right: -149px;
   top: -3px;
 }
 .navbar button{
@@ -114,7 +121,7 @@ body{
 .h3T{
   font-size: 20px;
   font-weight: 200;
-  line-height: 40px;
+  line-height: 50px;
 }
 .h3T .l{
   float: left;
@@ -344,7 +351,7 @@ body{
     min-width: 150px;
   }
   .navbar-nav>li>a{
-    line-height: 88px;
+    line-height: 80px;
     text-align: center;
   }
   .navbar-default .navbar-nav>li>a{
@@ -557,3 +564,16 @@ body{
     color: #aaa!important;
   }
 }
+
+
+.row-product .row{ margin-bottom: 15px;}
+.slide-v{ position:relative;}
+.slide-v:before{ content: " ";clear:both;display: table; background-color:rgba(0,0,0,0.2); width: 100%; height: 500px; position: absolute; top: 0px; left: 0px;}
+.slide-vz{display: block;width: 100%;height: 100%;position: absolute; background-color:#000;opacity: 0.3; z-index:50;
+-moz-box-shadow: inset 0px 0px 200px #000000;
+-webkit-box-shadow: inset 0px 0px 200px #000000;
+box-shadow: inset 0px 0px 200px #000000;
+z-index: 2;top: 0px;}
+/*video*/
+video#bgvid {position:; width:100%; height:auto;  z-index: -100;}
+video { display: block; }
